@@ -1,54 +1,41 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Support for imai apps, including Private Vault.">
 <title>Support / サポート</title>
-<style>
-body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; background: #111; color: #e0e0e0; line-height: 1.8; }
-h1 { color: #fff; border-bottom: 1px solid #333; padding-bottom: 12px; }
-h2 { color: #ccc; margin-top: 32px; }
-a { color: #7C4DFF; }
-.app-list { list-style: none; padding: 0; }
-.app-list li { padding: 12px 16px; margin: 8px 0; background: #1a1a1a; border-radius: 8px; border: 1px solid #333; }
-.app-name { font-weight: bold; color: #fff; }
-.app-desc { font-size: 0.9em; color: #aaa; }
-</style>
+<style>:root{color-scheme:light dark;--bg:#f2f0ec;--surface:#fff;--ink:#1a1a1a;--muted:#62635f;--accent:#2f6f6a;--tint:#e8f0ef;--line:#dedbd4;--warn:#79551f;--warn-bg:#f6eedc}*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:780px;margin:0 auto;padding:24px;background:var(--bg);color:var(--ink);line-height:1.72}h1{font-size:clamp(2rem,7vw,3rem);line-height:1.12;margin:28px 0 8px}h2{font-size:1.35rem;margin:40px 0 12px}h3{font-size:1.08rem;margin:28px 0 8px}p{font-size:1rem}a{color:var(--accent);font-weight:650}.meta,.muted{color:var(--muted);font-size:.92rem}.nav{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 30px}.nav a{padding:10px 14px;background:var(--surface);border:1px solid var(--line);border-radius:999px;text-decoration:none}.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px 20px;margin:20px 0}.highlight{background:var(--tint);border-color:transparent}.notice{background:var(--warn-bg);border-color:transparent;color:var(--warn)}:focus-visible{outline:3px solid var(--accent);outline-offset:3px}@media(prefers-color-scheme:dark){:root{--bg:#171a19;--surface:#232725;--ink:#f4f2ed;--muted:#b7bbb7;--accent:#7caea8;--tint:#263d39;--line:#3a3f3c;--warn:#e0b977;--warn-bg:#403624}}</style>
 </head>
 <body>
-<h1>Support / サポート</h1>
+<header><p class="muted"><a href="/">imai apps</a></p><h1>Support<br><small lang="ja">サポート</small></h1><p class="meta">Last updated: July 14, 2026 / <span lang="ja">最終更新日: 2026年7月14日</span></p><nav class="nav" aria-label="Legal pages"><a href="privacy.html">Privacy / プライバシー</a><a href="terms.html">Terms / 利用規約</a><a href="/#apps">App list / アプリ一覧</a></nav></header>
 
-<h2>Our Apps / アプリ一覧</h2>
-<ul class="app-list">
-<li><span class="app-name">Ishinouenimo（石の上にも三年）</span><br><span class="app-desc">Habit tracker with stone visual / 継続トラッカー</span></li>
-<li><span class="app-name">OnkoChishin（温故知新）</span><br><span class="app-desc">Daily historical quiz / 今日は何の日？歴史クイズ</span></li>
-<li><span class="app-name">MikkaBouzu（三日坊主）</span><br><span class="app-desc">3-day challenge tracker / 3日チャレンジ</span></li>
-<li><span class="app-name">Koketsu（虎穴）</span><br><span class="app-desc">Risk judgment game / リスク判断ゲーム</span></li>
-<li><span class="app-name">MizuNiNagasu（水に流す）</span><br><span class="app-desc">Stress release app / ストレス解放</span></li>
-<li><span class="app-name">ChiriTsumo（塵も積もれば）</span><br><span class="app-desc">Micro savings tracker / マイクロ貯金</span></li>
-<li><span class="app-name">Zanshin（残心）</span><br><span class="app-desc">Focus timer with zanshin phase / 集中タイマー</span></li>
-<li><span class="app-name">ShimenSoka（四面楚歌）</span><br><span class="app-desc">Grid escape puzzle / 脱出パズル</span></li>
-<li><span class="app-name">IssekiNichou（一石二鳥）</span><br><span class="app-desc">Condition matching puzzle / 条件マッチパズル</span></li>
-<li><span class="app-name">FugenJikkou（不言実行）</span><br><span class="app-desc">Silent to-do app / サイレントTo-Do</span></li>
-</ul>
+<section id="private-vault" class="card highlight">
+<h2>Private Vault / <span lang="ja">プライベート保管庫</span></h2>
+<p>Private Vault currently organizes and protects copies of photos and videos selected by the user on the iPhone. It has no account, cloud storage, advertising, analytics, or purchase system.</p><p lang="ja">プライベート保管庫の現在のバージョンは、ユーザーが選んだ写真・動画のコピーをiPhone内で整理・保護します。アカウント、クラウド保管、広告、分析、購入システムはありません。</p>
 
-<h2>FAQ / よくある質問</h2>
+<h3>Can the developer view my photos or videos? / <span lang="ja">開発者は写真や動画を見られますか？</span></h3>
+<p>No. The current version does not send selected media, folder names, or thumbnails to a developer server. The developer cannot remotely view or recover them.</p><p lang="ja">いいえ。現在のバージョンは、選択したメディア、フォルダ名、サムネイルを開発者サーバーへ送信しません。開発者が遠隔で閲覧・復元することはできません。</p>
 
-<h3>How do I restore purchases? / 購入を復元するには？</h3>
-<p>Go to Settings in the app and tap "Restore Purchases".</p>
-<p>アプリの設定画面で「購入を復元する」をタップしてください。</p>
+<h3>What does the storage line mean? / <span lang="ja">保存状況の線は何を示しますか？</span></h3>
+<p>It compares the space allocated to files managed by Private Vault with the capacity currently available for important use on the iPhone. It is not a Free or Pro cloud quota, and available capacity changes as the iPhone is used.</p><p lang="ja">プライベート保管庫が管理するファイルの割当量と、iPhoneで重要用途に現在利用できる容量を比較しています。無料版・Pro版のクラウド上限ではなく、iPhoneの利用状況により変化します。</p>
 
-<h3>How do I remove ads? / 広告を消すには？</h3>
-<p>You can remove ads by purchasing the "Remove Ads" option in the app's settings.</p>
-<p>アプリの設定画面で「広告除去」を購入してください。</p>
+<h3>Does the app already reduce storage or play full videos? / <span lang="ja">すでに容量削減や動画の本格再生ができますか？</span></h3>
+<p>Not yet. “Save Space,” “Get Ready,” full viewing, cloud capacity, and Pro are planned previews. The current version is the local organization and protection foundation.</p><p lang="ja">まだできません。「空きを増やす」「見る準備」、本格閲覧、クラウド容量、Proは計画中のプレビューです。現在は端末内で整理・保護する基盤の段階です。</p>
 
-<h3>How do I delete my data? / データを削除するには？</h3>
-<p>All data is stored locally. Uninstalling the app will delete all data.</p>
-<p>すべてのデータはローカルに保存されています。アプリをアンインストールするとすべてのデータが削除されます。</p>
+<h3>Does the app delete the item from Photos? / <span lang="ja">写真アプリ内の項目を削除しますか？</span></h3>
+<p>No. The current version never deletes the selected item from Apple's Photos app.</p><p lang="ja">いいえ。現在のバージョンは、Appleの写真アプリ内の選択項目を削除しません。</p>
 
-<h2>Contact / お問い合わせ</h2>
-<p>For support inquiries, please email: <a href="mailto:imai.issatsu@gmail.com">imai.issatsu@gmail.com</a></p>
-<p>サポートに関するお問い合わせ: <a href="mailto:imai.issatsu@gmail.com">imai.issatsu@gmail.com</a></p>
+<h3>How do I delete Private Vault data? / <span lang="ja">プライベート保管庫のデータを削除するには？</span></h3>
+<p>Uninstalling Private Vault removes its app container and the locally stored media copies and folder information. Security credentials managed separately by iOS may require separate handling after reinstall. Until an in-app complete-erasure control is released and verified, contact us for the latest complete-deletion guidance.</p><p lang="ja">プライベート保管庫をアンインストールすると、アプリ領域内のメディアコピーとフォルダ情報は削除されます。iOSが別に管理するセキュリティ情報は、再インストール後に別途対応が必要な場合があります。アプリ内の完全消去機能が公開・検証されるまでは、最新の完全削除手順をお問い合わせください。</p>
 
+<h3>What is Pro? / <span lang="ja">Proとは？</span></h3>
+<p>Pro is only a plan preview. No product is currently sold. Candidate capacity and pricing may change after cloud storage, playback, deletion, and billing behavior are implemented and tested.</p><p lang="ja">Proはプラン案のプレビューだけです。現在販売中の商品はありません。候補容量と価格は、クラウド保管、再生、削除、課金動作の実装・検証後に変更する場合があります。</p>
+</section>
+
+<h2>Support for another app / <span lang="ja">その他のアプリ</span></h2>
+<p>Open the <a href="/#apps">app list</a> and select the app's own Support page. Purchase restoration, advertising privacy settings, data deletion, and account behavior differ by app; a control exists only when that app actually provides the related feature.</p><p lang="ja"><a href="/#apps">アプリ一覧</a>から対象アプリの個別Supportページを開いてください。購入復元、広告のプライバシー設定、データ削除、アカウントの取り扱いはアプリごとに異なり、その機能を実際に提供するアプリだけに関連操作があります。</p>
+
+<h2>Contact / <span lang="ja">お問い合わせ</span></h2>
+<div class="card"><p><a href="mailto:imai.issatsu@gmail.com">imai.issatsu@gmail.com</a></p><p>Include the app name, app version/build, iOS version, device model, and steps to reproduce. A screenshot is useful only if it contains no private media or sensitive information.</p><p lang="ja">アプリ名、バージョン・ビルド、iOSバージョン、端末、再現手順を添えてください。スクリーンショットは非公開メディアや機密情報を含まない場合だけ添付してください。</p></div>
+<p class="notice card">Do not send payment-card details, a complete purchase receipt, passwords, recovery credentials, or private photos/videos. / <span lang="ja">カード情報、購入レシート全文、パスワード、復旧情報、非公開の写真・動画を送らないでください。</span></p>
 </body>
 </html>

@@ -1,52 +1,81 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Privacy information for imai apps, including Private Vault.">
 <title>Privacy Policy / プライバシーポリシー</title>
 <style>
-body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; background: #111; color: #e0e0e0; line-height: 1.8; }
-h1 { color: #fff; border-bottom: 1px solid #333; padding-bottom: 12px; }
-h2 { color: #ccc; margin-top: 32px; }
-a { color: #7C4DFF; }
-.updated { color: #888; font-size: 0.85em; }
+:root{color-scheme:light dark;--bg:#f2f0ec;--surface:#fff;--ink:#1a1a1a;--muted:#62635f;--accent:#2f6f6a;--tint:#e8f0ef;--line:#dedbd4;--warn:#79551f;--warn-bg:#f6eedc}*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:780px;margin:0 auto;padding:24px;background:var(--bg);color:var(--ink);line-height:1.72}h1{font-size:clamp(2rem,7vw,3rem);line-height:1.12;margin:28px 0 8px}h2{font-size:1.35rem;margin:40px 0 12px}h3{font-size:1.08rem;margin:26px 0 8px}p,li{font-size:1rem}a{color:var(--accent);font-weight:650}.meta,.muted{color:var(--muted);font-size:.92rem}.nav{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 30px}.nav a{padding:10px 14px;background:var(--surface);border:1px solid var(--line);border-radius:999px;text-decoration:none}.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px 20px;margin:20px 0}.highlight{background:var(--tint);border-color:transparent}.notice{background:var(--warn-bg);border-color:transparent;color:var(--warn)}ul{padding-left:22px}li{margin:.45rem 0}:focus-visible{outline:3px solid var(--accent);outline-offset:3px}@media(prefers-color-scheme:dark){:root{--bg:#171a19;--surface:#232725;--ink:#f4f2ed;--muted:#b7bbb7;--accent:#7caea8;--tint:#263d39;--line:#3a3f3c;--warn:#e0b977;--warn-bg:#403624}}
 </style>
 </head>
 <body>
-<h1>Privacy Policy / プライバシーポリシー</h1>
-<p class="updated">Last updated / 最終更新日: 2026-03-23</p>
+<header>
+<p class="muted"><a href="/">imai apps</a></p>
+<h1>Privacy Policy<br><small lang="ja">プライバシーポリシー</small></h1>
+<p class="meta">Effective and last updated: July 14, 2026 / <span lang="ja">施行・最終更新日: 2026年7月14日</span></p>
+<nav class="nav" aria-label="Legal pages"><a href="terms.html">Terms / 利用規約</a><a href="support.html">Support / サポート</a><a href="/#apps">App list / アプリ一覧</a></nav>
+</header>
 
-<h2>1. Information Collection / 情報の収集</h2>
-<p>Our apps do not collect, store, or transmit any personal information. All data is stored locally on your device using Apple's SwiftData framework.</p>
-<p>当アプリは個人情報を収集・保存・送信しません。すべてのデータはAppleのSwiftDataフレームワークを使用してデバイス上にローカル保存されます。</p>
+<div class="card">
+<p><strong>Operator and data controller / <span lang="ja">運営者・データ管理者</span>:</strong> imai apps developer (Japan) / <span lang="ja">imai apps開発者（日本）</span></p>
+<p><strong>Contact / <span lang="ja">連絡先</span>:</strong> <a href="mailto:imai.issatsu@gmail.com">imai.issatsu@gmail.com</a></p>
+</div>
 
-<h2>2. Advertising / 広告</h2>
-<p>Our apps use Google AdMob to display advertisements. AdMob may collect device identifiers and usage data to serve relevant ads. Please refer to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> for details.</p>
-<p>当アプリはGoogle AdMobを使用して広告を表示します。AdMobは関連する広告を配信するためにデバイス識別子や利用データを収集する場合があります。詳細は<a href="https://policies.google.com/privacy">Googleのプライバシーポリシー</a>をご参照ください。</p>
+<h2>1. Scope / <span lang="ja">適用範囲</span></h2>
+<p>This page provides common privacy information for apps operated by the developer. Features and third-party services differ by app. When an app-specific policy is available from the <a href="/#apps">app list</a>, that policy describes the app in greater detail and controls if it conflicts with this common page.</p>
+<p lang="ja">本ページは、開発者が運営するアプリに共通するプライバシー情報を示します。機能や第三者サービスはアプリごとに異なります。<a href="/#apps">アプリ一覧</a>に個別ポリシーがある場合は、その個別ポリシーがより詳しい内容を示し、本ページと矛盾する場合は個別ポリシーが優先されます。</p>
 
-<h2>3. App Tracking Transparency / アプリトラッキング透明性</h2>
-<p>Our apps request your permission before tracking your activity across other companies' apps and websites, in compliance with Apple's App Tracking Transparency framework.</p>
-<p>当アプリはAppleのApp Tracking Transparencyフレームワークに準拠し、他社のアプリやウェブサイトでのアクティビティを追跡する前にお客様の許可を求めます。</p>
+<section id="private-vault" class="card highlight">
+<h2>2. Private Vault — current version / <span lang="ja">プライベート保管庫 — 現在のバージョン</span></h2>
+<p>Private Vault currently works on the user's iPhone only. It does not provide a developer-operated account, cloud storage, advertising, analytics, tracking, or purchases.</p>
+<p lang="ja">プライベート保管庫の現在のバージョンは、ユーザーのiPhone内だけで動作します。開発者が運営するアカウント、クラウド保管、広告、分析、トラッキング、購入機能はありません。</p>
 
-<h2>4. In-App Purchases / アプリ内課金</h2>
-<p>Our apps offer in-app purchases processed through Apple's App Store. We do not have access to your payment information.</p>
-<p>当アプリはApple App Storeを通じたアプリ内課金を提供しています。お客様の支払い情報にはアクセスしません。</p>
+<h3>Information handled / <span lang="ja">取り扱う情報</span></h3>
+<ul>
+<li>Photos and videos explicitly chosen with Apple's system picker; the app does not receive unrestricted access to the entire photo library. / <span lang="ja">Appleのシステム選択画面でユーザーが明示的に選んだ写真・動画。写真ライブラリ全体への無制限アクセスは取得しません。</span></li>
+<li>Folder names, media-copy information, protection state, and app settings stored inside the app's protected area on the iPhone. / <span lang="ja">iPhone上のアプリ保護領域に保存されるフォルダ名、メディアコピー情報、保護状態、アプリ設定。</span></li>
+<li>Per-item security credentials stored through the operating system's Keychain. / <span lang="ja">OSのKeychainを通じて保存される項目ごとのセキュリティ情報。</span></li>
+<li>Vault file size and available-device-capacity values used only to display storage status on the device. / <span lang="ja">端末上で保存状況を表示するためだけに使用する、保管庫ファイルサイズと端末の利用可能容量。</span></li>
+</ul>
 
-<h2>5. Children's Privacy / 子供のプライバシー</h2>
-<p>Our apps are not directed at children under 13. We do not knowingly collect personal information from children.</p>
-<p>当アプリは13歳未満の子供を対象としていません。子供の個人情報を意図的に収集することはありません。</p>
+<h3>No developer-server transfer / <span lang="ja">開発者サーバーへの送信なし</span></h3>
+<p>The current version does not transmit selected media, folder names, thumbnails, storage status, or usage events to the developer's server. The developer cannot remotely view or recover the user's media.</p>
+<p lang="ja">現在のバージョンは、選択したメディア、フォルダ名、サムネイル、保存状況、利用イベントを開発者サーバーへ送信しません。開発者がユーザーのメディアを遠隔で閲覧・復元することはできません。</p>
 
-<h2>6. Data Deletion / データの削除</h2>
-<p>Since all data is stored locally on your device, you can delete all app data by uninstalling the app.</p>
-<p>すべてのデータはデバイス上にローカル保存されているため、アプリをアンインストールすることですべてのデータを削除できます。</p>
+<h3>Device authentication / <span lang="ja">端末認証</span></h3>
+<p>Private Vault asks iOS to authenticate the device owner before showing private folders. The app receives only the authentication result and does not receive or store Face ID or other biometric data.</p>
+<p lang="ja">プライベート保管庫は、非公開フォルダを表示する前に端末所有者の認証をiOSへ依頼します。アプリが受け取るのは認証結果だけで、Face IDその他の生体情報を取得・保存しません。</p>
 
-<h2>7. Changes / 変更</h2>
-<p>We may update this Privacy Policy from time to time. Changes will be posted on this page.</p>
-<p>本プライバシーポリシーは随時更新される場合があります。変更はこのページに掲載されます。</p>
+<h3>Retention and deletion / <span lang="ja">保存期間と削除</span></h3>
+<p>Because the current version has no developer server, the developer holds no remote copy to delete. Uninstalling the app removes its app container and locally stored media copies and folder information. Security credentials managed separately by the operating system may require separate handling after reinstall; contact support for current complete-deletion guidance. The current version does not delete the item in Apple's Photos app.</p>
+<p lang="ja">現在のバージョンには開発者サーバーがないため、開発者側に遠隔削除できるコピーはありません。アプリをアンインストールすると、アプリ領域内のメディアコピーとフォルダ情報は削除されます。OSが別に管理するセキュリティ情報は、再インストール後に別途対応が必要な場合があるため、完全削除の最新手順はサポートへお問い合わせください。現在のバージョンがAppleの写真アプリ内の項目を削除することはありません。</p>
 
-<h2>8. Contact / お問い合わせ</h2>
-<p>If you have questions about this Privacy Policy, please contact us at: <a href="mailto:imai.issatsu@gmail.com">imai.issatsu@gmail.com</a></p>
-<p>本プライバシーポリシーについてご質問がある場合は、<a href="mailto:imai.issatsu@gmail.com">imai.issatsu@gmail.com</a>までお問い合わせください。</p>
+<p class="notice card">Planned space-saving viewing, cloud capacity, Pro subscriptions, and advertising are not active in the current version. This policy will be revised before any such feature is enabled. / <span lang="ja">計画中の省スペース閲覧、クラウド容量、Proサブスクリプション、広告は現在有効ではありません。これらを有効化する前に本ポリシーを改訂します。</span></p>
+</section>
 
+<h2>3. Advertising, tracking, and consent in other apps / <span lang="ja">他アプリの広告・トラッキング・同意</span></h2>
+<p>Only apps that actually display advertising use an advertising provider such as Google AdMob. Those apps identify advertising and consent behavior in their app-specific policy and settings. Installing an imai app does not by itself mean that tracking occurs. An Apple App Tracking Transparency request is shown only when an app's actual data flow requires it and after the app explains the request.</p>
+<p lang="ja">実際に広告を表示するアプリだけが、Google AdMob等の広告事業者を使用します。対象アプリは、広告と同意の取り扱いを個別ポリシーおよび設定画面に記載します。imai appsのアプリをインストールしただけでトラッキングが行われるわけではありません。AppleのApp Tracking Transparency許可は、実際のデータフローで必要な場合に、理由を説明した上で表示します。</p>
+
+<h2>4. Purchases in other apps / <span lang="ja">他アプリの購入</span></h2>
+<p>Only apps that show purchase controls offer in-app purchases. Apple processes payment information. If an app uses a purchase-entitlement provider such as RevenueCat, the app-specific policy describes the identifiers and purchase information processed for entitlement verification and restoration.</p>
+<p lang="ja">購入画面を実際に表示するアプリだけがアプリ内購入を提供します。支払い情報はAppleが処理します。RevenueCat等の購入利用権サービスを使用する場合、利用権の確認・復元に使用する識別子と購入情報を個別ポリシーへ記載します。</p>
+
+<h2>5. Children / <span lang="ja">子どものプライバシー</span></h2>
+<p>Unless an app-specific page says otherwise, the apps are general-audience tools and are not directed specifically to children. Users below the minimum age for digital consent in their country or region should use an app only with authorization from a parent or legal guardian.</p>
+<p lang="ja">個別ページに別の記載がない限り、各アプリは一般向けであり、子どもを主な対象としていません。国・地域で定められたデジタル同意の最低年齢に満たない方は、保護者または法定代理人の許可を得て利用してください。</p>
+
+<h2>6. Your rights, choices, and complaints / <span lang="ja">ユーザーの権利・選択・苦情</span></h2>
+<p>Where applicable, you may request access, correction, deletion, restriction, objection, or portability for information controlled by the developer, and may complain to the data-protection authority in your country or region. Information controlled directly by Apple, Google, RevenueCat, or another provider must be requested through that provider's channel.</p>
+<p lang="ja">適用法に基づき、開発者が管理する情報について、アクセス、訂正、削除、処理制限、異議申立て、データポータビリティを請求し、居住国・地域のデータ保護監督機関へ苦情を申し立てることができます。Apple、Google、RevenueCatその他の事業者が直接管理する情報は、各事業者の窓口へ請求してください。</p>
+
+<h2>7. Changes / <span lang="ja">変更</span></h2>
+<p>This policy may be updated when an app's features, providers, or legal requirements change. Material changes will be reflected by updating the effective date on this page.</p>
+<p lang="ja">アプリの機能、利用する事業者、法的要件の変更に応じて本ポリシーを更新する場合があります。重要な変更は、本ページの施行日を更新して反映します。</p>
+
+<h2>8. Contact / <span lang="ja">お問い合わせ</span></h2>
+<p><a href="mailto:imai.issatsu@gmail.com">imai.issatsu@gmail.com</a></p>
+<p class="muted">For Private Vault, do not attach private photos or videos unless support specifically requests a safe diagnostic sample. Never send payment-card details or a complete purchase receipt. / <span lang="ja">プライベート保管庫について、サポートが安全な診断用サンプルを明示的に依頼しない限り、非公開の写真や動画を添付しないでください。カード情報や購入レシート全文も送らないでください。</span></p>
 </body>
 </html>
