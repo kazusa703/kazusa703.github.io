@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Privacy information for imai apps, including Private Vault and Soranji.">
+<meta name="description" content="Privacy information for imai apps, including Private Vault, Soranji, and Tasuki.">
 <title>Privacy Policy / プライバシーポリシー</title>
 <style>
 :root{color-scheme:light dark;--bg:#f2f0ec;--surface:#fff;--ink:#1a1a1a;--muted:#62635f;--accent:#2f6f6a;--tint:#e8f0ef;--line:#dedbd4;--warn:#79551f;--warn-bg:#f6eedc}*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:780px;margin:0 auto;padding:24px;background:var(--bg);color:var(--ink);line-height:1.72}h1{font-size:clamp(2rem,7vw,3rem);line-height:1.12;margin:28px 0 8px}h2{font-size:1.35rem;margin:40px 0 12px}h3{font-size:1.08rem;margin:26px 0 8px}p,li{font-size:1rem}a{color:var(--accent);font-weight:650}.meta,.muted{color:var(--muted);font-size:.92rem}.nav{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 30px}.nav a{padding:10px 14px;background:var(--surface);border:1px solid var(--line);border-radius:999px;text-decoration:none}.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px 20px;margin:20px 0}.highlight{background:var(--tint);border-color:transparent}.notice{background:var(--warn-bg);border-color:transparent;color:var(--warn)}ul{padding-left:22px}li{margin:.45rem 0}:focus-visible{outline:3px solid var(--accent);outline-offset:3px}@media(prefers-color-scheme:dark){:root{--bg:#171a19;--surface:#232725;--ink:#f4f2ed;--muted:#b7bbb7;--accent:#7caea8;--tint:#263d39;--line:#3a3f3c;--warn:#e0b977;--warn-bg:#403624}}
@@ -14,7 +14,7 @@
 <p class="muted"><a href="/">imai apps</a></p>
 <h1>Privacy Policy<br><small lang="ja">プライバシーポリシー</small></h1>
 <p class="meta">Effective and last updated: August 5, 2026 / <span lang="ja">施行・最終更新日: 2026年8月5日</span></p>
-<nav class="nav" aria-label="Legal pages"><a href="terms.html">Terms / 利用規約</a><a href="support.html">Support / サポート</a><a href="/#apps">App list / アプリ一覧</a><a href="#soranji">Soranji</a></nav>
+<nav class="nav" aria-label="Legal pages"><a href="terms.html">Terms / 利用規約</a><a href="support.html">Support / サポート</a><a href="/#apps">App list / アプリ一覧</a><a href="#soranji">Soranji</a><a href="#tasuki">Tasuki</a></nav>
 </header>
 
 <div class="card">
@@ -92,27 +92,49 @@
 <p class="muted">Provider information: <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google Mobile Ads data disclosure</a> · <a href="https://policies.google.com/privacy">Google Privacy Policy</a> · <a href="https://www.revenuecat.com/privacy/">RevenueCat Privacy Policy</a> · <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></p>
 </section>
 
-<h2>4. Advertising, tracking, and consent in other apps / <span lang="ja">他アプリの広告・トラッキング・同意</span></h2>
+<section id="tasuki" class="card highlight">
+<h2>4. Tasuki — version 1.0 / <span lang="ja">Tasuki — バージョン1.0</span></h2>
+<p>This section applies specifically to Tasuki version 1.0 and controls if it conflicts with the common provisions on this page.</p>
+<p lang="ja">本節はTasukiバージョン1.0に固有の内容であり、本ページの共通規定と矛盾する場合は本節が優先されます。</p>
+
+<h3>Information handled on the device / <span lang="ja">端末内で取り扱う情報</span></h3>
+<p>Matters, in-progress drafts, answers, receipts, progress, and settings are stored in the app's local container. Tasuki does not create a developer-operated account, provide cloud sync, run analytics, track users, show ads, or send those entries to the developer.</p>
+<p lang="ja">Matter、作成途中の下書き、回答、受領記録、進捗、設定は、アプリのローカル領域に保存されます。Tasukiは、開発者運営のアカウントやクラウド同期を提供せず、分析、ユーザー追跡、広告表示を行わず、これらの入力内容を開発者へ送信しません。</p>
+
+<h3>Backup / <span lang="ja">バックアップ</span></h3>
+<p>Formal Matter data is eligible for the operating system's normal device-backup behavior. The separate in-progress Draft store is marked as excluded from backup. Backup availability and restoration are controlled by Apple, the device, and the user's settings; Tasuki does not promise cloud sync or cross-device transfer.</p>
+<p lang="ja">確定したMatterデータは、OSの通常の端末バックアップの対象になり得ます。別に保存される作成途中の下書きは、バックアップ対象外として設定されています。バックアップの可否と復元は、Apple、端末、ユーザー設定により管理され、Tasukiはクラウド同期や端末間転送を保証しません。</p>
+
+<h3>Archive and deletion / <span lang="ja">アーカイブと削除</span></h3>
+<p>Archiving is reversible and is not deletion. When the user chooses complete deletion, Tasuki provides the stated short undo window. After that window expires, the selected local record and its related local records are deleted. Uninstalling the app removes its local app container, subject to any device backup controlled through Apple's services and settings.</p>
+<p lang="ja">アーカイブは元に戻すことができ、削除ではありません。ユーザーが完全削除を選ぶと、Tasukiは画面に示した短い取り消し猶予を設けます。猶予期間が過ぎると、選択した端末内の記録と関連する端末内記録が削除されます。アプリをアンインストールするとローカルのアプリ領域は削除されますが、Appleのサービスと設定で管理される端末バックアップが存在する場合があります。</p>
+
+<h3>Purchases / <span lang="ja">購入</span></h3>
+<p>Tasuki version 1.0 is free and has no in-app purchase or subscription, so the app handles no purchase or subscription data.</p>
+<p lang="ja">Tasukiバージョン1.0は無料で、アプリ内購入やサブスクリプションがないため、購入・サブスクリプションデータを取り扱いません。</p>
+</section>
+
+<h2>5. Advertising, tracking, and consent in other apps / <span lang="ja">他アプリの広告・トラッキング・同意</span></h2>
 <p>Only apps that actually display advertising use an advertising provider such as Google AdMob. Those apps identify advertising and consent behavior in their app-specific policy and settings. Installing an imai app does not by itself mean that tracking occurs. An Apple App Tracking Transparency request is shown only when an app's actual data flow requires it and after the app explains the request.</p>
 <p lang="ja">実際に広告を表示するアプリだけが、Google AdMob等の広告事業者を使用します。対象アプリは、広告と同意の取り扱いを個別ポリシーおよび設定画面に記載します。imai appsのアプリをインストールしただけでトラッキングが行われるわけではありません。AppleのApp Tracking Transparency許可は、実際のデータフローで必要な場合に、理由を説明した上で表示します。</p>
 
-<h2>5. Purchases in other apps / <span lang="ja">他アプリの購入</span></h2>
+<h2>6. Purchases in other apps / <span lang="ja">他アプリの購入</span></h2>
 <p>Only apps that show purchase controls offer in-app purchases. Apple processes payment information. If an app uses a purchase-entitlement provider such as RevenueCat, the app-specific policy describes the identifiers and purchase information processed for entitlement verification and restoration.</p>
 <p lang="ja">購入画面を実際に表示するアプリだけがアプリ内購入を提供します。支払い情報はAppleが処理します。RevenueCat等の購入利用権サービスを使用する場合、利用権の確認・復元に使用する識別子と購入情報を個別ポリシーへ記載します。</p>
 
-<h2>6. Children / <span lang="ja">子どものプライバシー</span></h2>
+<h2>7. Children / <span lang="ja">子どものプライバシー</span></h2>
 <p>Unless an app-specific page says otherwise, the apps are general-audience tools and are not directed specifically to children. Users below the minimum age for digital consent in their country or region should use an app only with authorization from a parent or legal guardian.</p>
 <p lang="ja">個別ページに別の記載がない限り、各アプリは一般向けであり、子どもを主な対象としていません。国・地域で定められたデジタル同意の最低年齢に満たない方は、保護者または法定代理人の許可を得て利用してください。</p>
 
-<h2>7. Your rights, choices, and complaints / <span lang="ja">ユーザーの権利・選択・苦情</span></h2>
+<h2>8. Your rights, choices, and complaints / <span lang="ja">ユーザーの権利・選択・苦情</span></h2>
 <p>Where applicable, you may request access, correction, deletion, restriction, objection, or portability for information controlled by the developer, and may complain to the data-protection authority in your country or region. Information controlled directly by Apple, Google, RevenueCat, or another provider must be requested through that provider's channel.</p>
 <p lang="ja">適用法に基づき、開発者が管理する情報について、アクセス、訂正、削除、処理制限、異議申立て、データポータビリティを請求し、居住国・地域のデータ保護監督機関へ苦情を申し立てることができます。Apple、Google、RevenueCatその他の事業者が直接管理する情報は、各事業者の窓口へ請求してください。</p>
 
-<h2>8. Changes / <span lang="ja">変更</span></h2>
+<h2>9. Changes / <span lang="ja">変更</span></h2>
 <p>This policy may be updated when an app's features, providers, or legal requirements change. Material changes will be reflected by updating the effective date on this page.</p>
 <p lang="ja">アプリの機能、利用する事業者、法的要件の変更に応じて本ポリシーを更新する場合があります。重要な変更は、本ページの施行日を更新して反映します。</p>
 
-<h2>9. Contact / <span lang="ja">お問い合わせ</span></h2>
+<h2>10. Contact / <span lang="ja">お問い合わせ</span></h2>
 <p><a href="mailto:imai.issatsu@gmail.com">imai.issatsu@gmail.com</a></p>
 <p class="muted">For Private Vault, do not attach private photos or videos unless support specifically requests a safe diagnostic sample. Never send payment-card details or a complete purchase receipt. / <span lang="ja">プライベート保管庫について、サポートが安全な診断用サンプルを明示的に依頼しない限り、非公開の写真や動画を添付しないでください。カード情報や購入レシート全文も送らないでください。</span></p>
 </body>
