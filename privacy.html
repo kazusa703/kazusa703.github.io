@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Privacy information for imai apps, including Private Vault, Soranji, Tasuki, and AtoBako.">
+<meta name="description" content="Privacy information for imai apps, including Nami, Private Vault, Soranji, Tasuki, and AtoBako.">
 <title>Privacy Policy / プライバシーポリシー</title>
 <style>
 :root{color-scheme:light dark;--bg:#f2f0ec;--surface:#fff;--ink:#1a1a1a;--muted:#62635f;--accent:#2f6f6a;--tint:#e8f0ef;--line:#dedbd4;--warn:#79551f;--warn-bg:#f6eedc}*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:780px;margin:0 auto;padding:24px;background:var(--bg);color:var(--ink);line-height:1.72}h1{font-size:clamp(2rem,7vw,3rem);line-height:1.12;margin:28px 0 8px}h2{font-size:1.35rem;margin:40px 0 12px}h3{font-size:1.08rem;margin:26px 0 8px}p,li{font-size:1rem}a{color:var(--accent);font-weight:650}.meta,.muted{color:var(--muted);font-size:.92rem}.nav{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 30px}.nav a{padding:10px 14px;background:var(--surface);border:1px solid var(--line);border-radius:999px;text-decoration:none}.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px 20px;margin:20px 0}.highlight{background:var(--tint);border-color:transparent}.notice{background:var(--warn-bg);border-color:transparent;color:var(--warn)}ul{padding-left:22px}li{margin:.45rem 0}:focus-visible{outline:3px solid var(--accent);outline-offset:3px}@media(prefers-color-scheme:dark){:root{--bg:#171a19;--surface:#232725;--ink:#f4f2ed;--muted:#b7bbb7;--accent:#7caea8;--tint:#263d39;--line:#3a3f3c;--warn:#e0b977;--warn-bg:#403624}}
@@ -14,7 +14,7 @@
 <p class="muted"><a href="/">imai apps</a></p>
 <h1>Privacy Policy<br><small lang="ja">プライバシーポリシー</small></h1>
 <p class="meta">Effective and last updated: August 6, 2026 / <span lang="ja">施行・最終更新日: 2026年8月6日</span></p>
-<nav class="nav" aria-label="Legal pages"><a href="terms.html">Terms / 利用規約</a><a href="support.html">Support / サポート</a><a href="/#apps">App list / アプリ一覧</a><a href="#soranji">Soranji</a><a href="#tasuki">Tasuki</a><a href="#atobako">AtoBako</a></nav>
+<nav class="nav" aria-label="Legal pages"><a href="terms.html">Terms / 利用規約</a><a href="support.html">Support / サポート</a><a href="/#apps">App list / アプリ一覧</a><a href="#nami">Nami</a><a href="#soranji">Soranji</a><a href="#tasuki">Tasuki</a><a href="#atobako">AtoBako</a></nav>
 </header>
 
 <div class="card">
@@ -134,6 +134,45 @@
 <h3>Archive and complete deletion / <span lang="ja">アーカイブと完全削除</span></h3>
 <p>Archive retains the selected photo or text, history, and finalized totals; it is not deletion. After separate confirmation and a successful save, complete deletion removes the selected box and its related records from the current local store. It is logical app-level deletion, not forensic secure erase, and does not remove copies already present in device backups.</p>
 <p lang="ja">アーカイブは、選択した写真または文字、履歴、確定した累計を保持するため、削除ではありません。別確認後の保存に成功すると、完全削除は対象の箱と関連記録を現在のローカル保存領域から削除します。これはアプリ上の論理削除であり、フォレンジックな完全消去ではなく、既存の端末バックアップ内コピーを削除するものではありません。</p>
+</section>
+
+<section id="nami" class="card highlight">
+<h2>Nami — version 4.1 / <span lang="ja">Nami — バージョン4.1</span></h2>
+<p>This section applies specifically to Nami version 4.1 and controls if it conflicts with the common provisions on this page.</p>
+<p lang="ja">本節はNamiバージョン4.1に固有の内容であり、本ページの共通規定と矛盾する場合は本節が優先されます。</p>
+
+<h3>Information handled / <span lang="ja">取り扱う情報</span></h3>
+<p>Nami lets the user record a mood score and, optionally, tags, a short memo, an energy level, a photo, and a voice note. The app may also save weather conditions returned by Apple WeatherKit. Latitude and longitude are used only to request weather when the user enables that feature and are not saved in a Nami journal entry.</p>
+<p lang="ja">Namiでは、気分スコアに加え、任意でタグ、短いメモ、エネルギーレベル、写真、音声を記録できます。Apple WeatherKitから取得した天気情報を保存する場合があります。現在地は、ユーザーが天気機能を有効にした場合の問い合わせにのみ使用し、緯度・経度をNamiの記録へ保存しません。</p>
+
+<h3>Private iCloud sync / <span lang="ja">Private iCloud同期</span></h3>
+<p>Mood entries, tags, settings needed for the journal, and monthly reflections may sync through the user's Private CloudKit database. Optional photos and voice notes may be copied to the user's Private iCloud Documents container. These services depend on the user's Apple Account, iCloud settings, available storage, network connection, and Apple's service availability. The developer does not operate a separate account or content server for the user's Nami journal.</p>
+<p lang="ja">気分記録、タグ、記録に必要な設定、月間の振り返りは、ユーザーのPrivate CloudKit databaseで同期される場合があります。任意の写真と音声は、ユーザーのPrivate iCloud Documents containerへコピーされる場合があります。これらはApple Account、iCloud設定、空き容量、通信、Appleのサービス状況に依存します。開発者はNamiの記録内容を保管する独自アカウントまたはコンテンツサーバーを運営しません。</p>
+
+<h3>HealthKit / HealthKit</h3>
+<p>HealthKit access is optional and read-only. When enabled, selected Health values are queried for on-device comparison with the user's mood records. Nami does not write Health data and does not add HealthKit-derived values to its CloudKit journal records. Health data is not provided by Nami to Google Mobile Ads or RevenueCat.</p>
+<p lang="ja">HealthKit連携は任意かつ読み取り専用です。有効にした場合、選択したHealth値を、本人の気分記録との端末内比較のために照会します。NamiはHealthデータを書き込まず、HealthKit由来の値をCloudKit上の記録へ追加しません。NamiからGoogle Mobile AdsまたはRevenueCatへHealthデータを提供しません。</p>
+
+<h3>Advertising, consent, and tracking / <span lang="ja">広告、同意、トラッキング</span></h3>
+<p>The Free version may display a Google AdMob banner at the bottom of the Record tab. Nami uses Google's User Messaging Platform (UMP) to request and store privacy choices where required. The advertising SDK starts only after the consent flow reports that ads may be requested. Where applicable, iOS App Tracking Transparency permission may then be requested. Pro users do not receive this advertising placement.</p>
+<p lang="ja">Free版では、記録タブ下部にGoogle AdMobのバナー広告が表示される場合があります。Namiは、必要な地域でプライバシーの選択肢を提示・保存するためGoogle User Messaging Platform（UMP）を使用します。広告SDKは、同意フローが広告リクエスト可能と示した後に開始します。該当する場合、その後にiOSのApp Tracking Transparency許可を求める場合があります。Pro利用者にはこの広告枠を表示しません。</p>
+<p>Google's SDKs may process data such as an IP-address-derived coarse location, device identifiers, advertising data, product interactions, performance data, crash data, and other diagnostics according to the user's region, choices, permissions, and Google's configuration. Nami does not send the user's mood score, tags, memo, photo, voice note, or HealthKit values to Google as ad-targeting fields.</p>
+<p lang="ja">GoogleのSDKは、地域、選択、許可、Google側設定に応じ、IPアドレスから推定した概算位置、端末識別子、広告データ、製品操作、パフォーマンス、クラッシュ、その他診断データを処理する場合があります。Namiは、気分スコア、タグ、メモ、写真、音声、HealthKit値を広告ターゲティング項目としてGoogleへ送信しません。</p>
+
+<h3>Purchases / <span lang="ja">購入</span></h3>
+<p>Apple processes payments. Nami uses RevenueCat to obtain product offerings, validate purchase status, restore purchases, and determine the Pro entitlement. RevenueCat receives purchase history and an anonymous app user identifier for app functionality and service analytics. Nami does not provide a name or email address to RevenueCat and does not use RevenueCat purchase history for cross-app advertising tracking. Current price, billing period, renewal terms, and any trial eligibility are shown by the in-app purchase screen before purchase.</p>
+<p lang="ja">支払いはAppleが処理します。Namiは商品情報の取得、購入状態の検証、購入復元、Pro利用権の判定にRevenueCatを使用します。RevenueCatは、機能提供とサービス分析のため購入履歴と匿名のapp user identifierを受け取ります。NamiはRevenueCatへ氏名やメールアドレスを提供せず、RevenueCatの購入履歴をアプリ横断の広告トラッキングに使用しません。現在の価格、期間、更新条件、Trial適格性は購入前のアプリ内購入画面に表示します。</p>
+
+<h3>Retention, deletion, and uninstalling / <span lang="ja">保存、削除、アンインストール</span></h3>
+<p>In Settings, “Delete all personal data” deletes mood entries, memos, custom tags, monthly reflections, photos, and voice notes. When iCloud is connected, deletion is also synchronized to the related Private CloudKit and Private iCloud data. If an attachment cannot be removed from iCloud while offline or unavailable, Nami keeps a content-free deletion instruction and retries when iCloud becomes available. Apple purchase history remains associated with the Apple Account and is not removed by this action.</p>
+<p lang="ja">設定の「すべての個人データを削除」は、気分記録、メモ、カスタムタグ、月間の振り返り、写真、音声を削除します。iCloud接続中は、関連するPrivate CloudKitおよびPrivate iCloud側にも削除を同期します。オフラインまたはiCloudが利用できず添付を削除できない場合、Namiは内容を含まない削除指示を保持し、iCloud利用可能後に再試行します。Appleの購入履歴はApple Accountに残り、この操作では削除されません。</p>
+<p>Uninstalling removes the app's local container but does not guarantee immediate deletion of data already synchronized to Private iCloud. To remove Nami data comprehensively, use the in-app delete-all action while iCloud is available before uninstalling. Provider-controlled advertising, consent, diagnostic, and purchase records follow Google, RevenueCat, and Apple's respective retention and request processes.</p>
+<p lang="ja">アンインストールは端末内のapp containerを削除しますが、Private iCloudへ同期済みのデータが直ちに削除されることを保証しません。Namiのデータを包括的に削除するには、アンインストール前にiCloudが利用可能な状態でアプリ内全削除を実行してください。Google、RevenueCat、Appleが管理する広告、同意、診断、購入記録には、各社の保存期間と請求手続が適用されます。</p>
+
+<h3>Choices and contact / <span lang="ja">選択と問い合わせ</span></h3>
+<p>Users can disable optional HealthKit or weather features, change advertising privacy choices when the privacy-options entry is required, manage subscriptions through Apple, restore purchases in Nami, or use the delete-all action. For a support request, provide the app version, iOS version, device model, and steps to reproduce. Do not send intimate journal text, private photos or voice notes, payment-card details, or a complete purchase receipt unless a safe diagnostic item is specifically requested.</p>
+<p lang="ja">ユーザーは任意のHealthKit・天気機能を無効にし、プライバシー設定項目が必要な場合は広告の選択を変更し、Appleでサブスクリプションを管理し、Namiで購入を復元し、またはアプリ内全削除を利用できます。問い合わせにはアプリのバージョン、iOSバージョン、端末機種、再現手順を記載してください。安全な診断項目を明示的に求められない限り、私的な記録本文、非公開の写真・音声、カード情報、購入レシート全文は送らないでください。</p>
+<p class="muted">Provider information: <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google Mobile Ads data disclosure</a> · <a href="https://policies.google.com/privacy">Google Privacy Policy</a> · <a href="https://www.revenuecat.com/privacy/">RevenueCat Privacy Policy</a> · <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></p>
 </section>
 
 <h2>5. Advertising, tracking, and consent in other apps / <span lang="ja">他アプリの広告・トラッキング・同意</span></h2>

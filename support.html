@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Support for imai apps, including Private Vault, Tasuki, and AtoBako.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Support for imai apps, including Nami, Private Vault, Tasuki, and AtoBako.">
 <title>Support / サポート</title>
 <style>:root{color-scheme:light dark;--bg:#f2f0ec;--surface:#fff;--ink:#1a1a1a;--muted:#62635f;--accent:#2f6f6a;--tint:#e8f0ef;--line:#dedbd4;--warn:#79551f;--warn-bg:#f6eedc}*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:780px;margin:0 auto;padding:24px;background:var(--bg);color:var(--ink);line-height:1.72}h1{font-size:clamp(2rem,7vw,3rem);line-height:1.12;margin:28px 0 8px}h2{font-size:1.35rem;margin:40px 0 12px}h3{font-size:1.08rem;margin:28px 0 8px}p{font-size:1rem}a{color:var(--accent);font-weight:650}.meta,.muted{color:var(--muted);font-size:.92rem}.nav{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 30px}.nav a{padding:10px 14px;background:var(--surface);border:1px solid var(--line);border-radius:999px;text-decoration:none}.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px 20px;margin:20px 0}.highlight{background:var(--tint);border-color:transparent}.notice{background:var(--warn-bg);border-color:transparent;color:var(--warn)}:focus-visible{outline:3px solid var(--accent);outline-offset:3px}@media(prefers-color-scheme:dark){:root{--bg:#171a19;--surface:#232725;--ink:#f4f2ed;--muted:#b7bbb7;--accent:#7caea8;--tint:#263d39;--line:#3a3f3c;--warn:#e0b977;--warn-bg:#403624}}</style>
 </head>
 <body>
-<header><p class="muted"><a href="/">imai apps</a></p><h1>Support<br><small lang="ja">サポート</small></h1><p class="meta">Last updated: August 6, 2026 / <span lang="ja">最終更新日: 2026年8月6日</span></p><nav class="nav" aria-label="Legal pages"><a href="privacy.html">Privacy / プライバシー</a><a href="terms.html">Terms / 利用規約</a><a href="/#apps">App list / アプリ一覧</a><a href="#tasuki">Tasuki</a><a href="#atobako">AtoBako</a></nav></header>
+<header><p class="muted"><a href="/">imai apps</a></p><h1>Support<br><small lang="ja">サポート</small></h1><p class="meta">Last updated: August 6, 2026 / <span lang="ja">最終更新日: 2026年8月6日</span></p><nav class="nav" aria-label="Legal pages"><a href="privacy.html">Privacy / プライバシー</a><a href="terms.html">Terms / 利用規約</a><a href="/#apps">App list / アプリ一覧</a><a href="#nami">Nami</a><a href="#tasuki">Tasuki</a><a href="#atobako">AtoBako</a></nav></header>
 
 <section id="private-vault" class="card highlight">
 <h2>Private Vault / <span lang="ja">プライベート保管庫</span></h2>
@@ -58,6 +58,36 @@
 <h3>Is archive the same as deletion? / <span lang="ja">アーカイブは削除と同じですか？</span></h3>
 <p>No. Archive retains the box content and history. Complete deletion is a separate confirmed action. It removes the selected current local record after a successful save, but is not forensic secure erase and cannot remove an existing device-backup copy.</p>
 <p lang="ja">いいえ。アーカイブは箱の内容と履歴を保持します。完全削除は別の確認操作で、保存に成功すると対象の現在のローカル記録を削除しますが、フォレンジックな完全消去ではなく、既存の端末バックアップ内コピーを削除することはできません。</p>
+</section>
+
+<section id="nami" class="card highlight">
+<h2>Nami <span class="muted">(com.imai.Nami)</span></h2>
+
+<h3>How does iCloud sync work? / <span lang="ja">iCloud同期はどのように動作しますか？</span></h3>
+<p>Records, tags, and monthly reflections use Private CloudKit. Optional photos and voice notes use Private iCloud Documents. When iCloud is unavailable, Nami continues locally; data created while disconnected is synchronized when the service becomes available.</p>
+<p lang="ja">記録、タグ、月間の振り返りはPrivate CloudKit、任意の写真と音声はPrivate iCloud Documentsを使用します。iCloudが利用できない間も端末内で記録でき、利用可能後に同期します。</p>
+
+<h3>How do I delete my data? / <span lang="ja">データを削除するには？</span></h3>
+<p>Open Settings and select “Delete all personal data” while iCloud is available. This removes Nami records, memos, custom tags, monthly reflections, photos, and voice notes and synchronizes deletion to Private iCloud. Uninstalling alone does not guarantee deletion of data already synchronized to iCloud. Apple purchase history remains.</p>
+<p lang="ja">iCloudが利用可能な状態で、設定から「すべての個人データを削除」を選択してください。Namiの記録、メモ、カスタムタグ、月間の振り返り、写真、音声を削除し、Private iCloud側にも同期します。アンインストールだけでは同期済みデータの削除を保証しません。Appleの購入履歴は残ります。</p>
+
+<h3>How do I restore Pro? / <span lang="ja">Proを復元するには？</span></h3>
+<p>Use Restore Purchases in Nami's Pro screen while signed in to the Apple Account used for the purchase. Do not make another purchase solely to restore access.</p>
+<p lang="ja">購入時のApple Accountでサインインし、Nami Pro画面の「購入を復元」を使用してください。復元だけのために再購入しないでください。</p>
+
+<h3>Who receives a free trial? / <span lang="ja">無料Trialは誰に適用されますか？</span></h3>
+<p>A trial applies only when the annual option explicitly displays the trial duration and post-trial price. Eligibility is determined by the App Store. If no trial is displayed, the displayed price applies from the purchase date.</p>
+<p lang="ja">年額オプションにTrial期間と終了後価格が明示された場合だけ適用されます。適格性はApp Storeが判定します。Trial表示がない場合は、購入日から表示価格が適用されます。</p>
+
+<h3>How do I change advertising privacy choices? / <span lang="ja">広告のプライバシー選択を変更するには？</span></h3>
+<p>When Google reports that privacy options are required, Settings shows “Ad privacy settings.” Open it to review available choices. Pro removes Nami's ad placement but does not itself erase provider-controlled consent or purchase records.</p>
+<p lang="ja">Googleがプライバシー設定を必要と判定した場合、設定に「広告のプライバシー設定」が表示されます。そこから選択を確認できます。ProはNamiの広告枠を非表示にしますが、事業者が管理する同意・購入記録自体を削除するものではありません。</p>
+
+<h3>Is HealthKit data uploaded? / <span lang="ja">HealthKitデータはアップロードされますか？</span></h3>
+<p>Nami reads only the categories the user enables and processes comparison values on the device. It does not add HealthKit-derived values to Nami's CloudKit records or send them as advertising fields.</p>
+<p lang="ja">Namiは有効にした項目だけを読み取り、比較値を端末内で処理します。HealthKit由来値をNamiのCloudKit記録へ追加せず、広告項目として送信しません。</p>
+
+<p><strong>Contact / <span lang="ja">お問い合わせ</span>:</strong> <a href="mailto:imai.issatsu@gmail.com">imai.issatsu@gmail.com</a></p>
 </section>
 
 <h2>Support for another app / <span lang="ja">その他のアプリ</span></h2>
