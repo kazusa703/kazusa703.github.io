@@ -13,8 +13,8 @@
 <header>
 <p class="muted"><a href="/">imai apps</a></p>
 <h1>Privacy Policy<br><small lang="ja">プライバシーポリシー</small></h1>
-<p class="meta">Effective and last updated: September 30, 2026 / <span lang="ja">施行・最終更新日: 2026年9月30日</span></p>
-<nav class="nav" aria-label="Legal pages"><a href="terms.html">Terms / 利用規約</a><a href="support.html">Support / サポート</a><a href="/#apps">App list / アプリ一覧</a><a href="#iroku">Iroku 2.4</a><a href="#kotobazukan">Kotoba Zukan / 言葉の図鑑</a><a href="#mitalog">MitaLog</a><a href="#honmenmarubatsu">Honmen Marubatsu / 本免○×</a><a href="#zabuton">Zabuton</a><a href="#shimensoka">ShimenSoka</a><a href="#nami">Nami 4.1</a><a href="#nami42">Nami 4.2</a><a href="#soranji">Soranji</a><a href="#tasuki">Tasuki</a><a href="#atobako">AtoBako</a><a href="#shelf">Shelf</a></nav>
+<p class="meta">Effective and last updated: October 2, 2026 / <span lang="ja">施行・最終更新日: 2026年10月2日</span></p>
+<nav class="nav" aria-label="Legal pages"><a href="terms.html">Terms / 利用規約</a><a href="support.html">Support / サポート</a><a href="/#apps">App list / アプリ一覧</a><a href="#iroku">Iroku 2.4</a><a href="#kotobazukan">Kotoba Zukan / 言葉の図鑑</a><a href="#mitalog">MitaLog</a><a href="#honmenmarubatsu">Honmen Marubatsu / 本免○×</a><a href="#zabuton">Zabuton</a><a href="#justcount">JustCount</a><a href="#shimensoka">ShimenSoka</a><a href="#nami">Nami 4.1</a><a href="#nami42">Nami 4.2</a><a href="#soranji">Soranji</a><a href="#tasuki">Tasuki</a><a href="#atobako">AtoBako</a><a href="#shelf">Shelf</a></nav>
 </header>
 
 <div class="card">
@@ -204,6 +204,27 @@
 
 <p>Local records remain until the user deletes the item or app. Archiving is reversible and is not deletion. Apple and RevenueCat retain purchase and entitlement records under their respective terms. To request access to or deletion of information processed by RevenueCat on the developer's behalf, contact the developer through the support page.</p>
 <p lang="ja">端末内記録は、ユーザーが項目またはアプリを削除するまで保持されます。アーカイブは元に戻すことができ、削除ではありません。AppleとRevenueCatはそれぞれの条件に従い、購入・利用権記録を保持します。開発者の委託によりRevenueCatが処理する情報へのアクセスまたは削除を希望する場合は、サポートページから開発者へご連絡ください。</p>
+</section>
+
+<section id="justcount" class="card highlight">
+<h2>JustCount — version 3.0 / <span lang="ja">JustCount — バージョン3.0</span> <span class="muted">(com.imai.count)</span></h2>
+<p>JustCount stores folder names, counter names, values, timestamped count history, and settings in the app's local container. It has no developer-operated account or cloud sync. Counter contents are not provided to Google or RevenueCat as advertising or purchase fields.</p>
+<p lang="ja">JustCountは、フォルダ名、カウンター名、数値、時刻付きのカウント履歴、設定をアプリのローカル領域に保存します。開発者が運営するアカウントやクラウド同期はありません。カウンターの内容は、広告または購入の項目としてGoogleやRevenueCatに提供しません。</p>
+
+<h3>Advertising, consent, and tracking / <span lang="ja">広告、同意、トラッキング</span></h3>
+<p>Eligible non-Pro users may see Google AdMob banner, native, or interstitial advertising. JustCount updates Google User Messaging Platform (UMP) information and requests advertising only after the purchase entitlement is resolved and UMP permits ad requests. If Google requires a privacy-options control, it is available from Settings. When advertising is eligible, JustCount may request Apple App Tracking Transparency permission before starting the Google Mobile Ads SDK; declining does not prevent use of the counter. Pro does not request or display advertising.</p>
+<p lang="ja">対象となる非Proユーザーには、Google AdMobのバナー、ネイティブ広告、またはインタースティシャル広告が表示される場合があります。JustCountはGoogle User Messaging Platform（UMP）の情報を更新し、購入利用権が確定し、UMPが広告リクエストを許可した後にのみ広告をリクエストします。Googleがプライバシー設定の操作を必要とする場合は、設定から利用できます。広告を利用できる状態では、Google Mobile Ads SDKを開始する前にAppleのApp Tracking Transparency許可を求める場合があります。拒否してもカウンターは利用できます。Proでは広告をリクエストまたは表示しません。</p>
+<p>Depending on region, choices, and SDK behavior, Google Mobile Ads and UMP may process an IP-address-derived approximate location, device identifiers including an advertising identifier, advertising data such as ads viewed, product interactions, performance data, crash data, and other diagnostic data for advertising, measurement, analytics, fraud prevention, and service improvement. The exact handling depends on the applicable Google configuration and the user's choices.</p>
+<p lang="ja">地域、選択内容、SDKの動作に応じて、Google Mobile AdsとUMPは、IPアドレスから推定される概算位置情報、広告識別子を含む端末識別子、表示した広告などの広告データ、製品操作、パフォーマンスデータ、クラッシュデータ、その他の診断データを、広告配信、測定、分析、不正防止、サービス改善のために処理する場合があります。正確な取り扱いは、適用されるGoogleの設定とユーザーの選択により異なります。</p>
+
+<h3>Purchases / <span lang="ja">購入</span></h3>
+<p>Apple processes payment credentials. JustCount uses RevenueCat to show the available product, check the Remove Ads entitlement, make a purchase, and restore access. The app does not provide RevenueCat with a custom App User ID, name, or email address. RevenueCat may process an anonymous app user identifier, purchase history, receipt and transaction information, and entitlement status for these functions.</p>
+<p lang="ja">支払い資格情報はAppleが処理します。JustCountは、利用可能な商品表示、広告削除の利用権確認、購入、利用権の復元にRevenueCatを使用します。アプリはRevenueCatへ独自のApp User ID、氏名、メールアドレスを提供しません。RevenueCatはこれらの機能のために、匿名のアプリユーザー識別子、購入履歴、レシート・取引情報、利用権状態を処理する場合があります。</p>
+
+<h3>Retention and requests / <span lang="ja">保存と請求</span></h3>
+<p>Local counter records remain on the device until the user deletes them or removes the app's local container by uninstalling, subject to any device backup managed through Apple's services and settings. Records controlled by Apple, Google, or RevenueCat are handled under the applicable provider's policies and request processes.</p>
+<p lang="ja">端末内のカウンター記録は、ユーザーが削除するか、アプリをアンインストールして端末上のアプリ領域を削除するまで端末に残ります。ただし、端末バックアップはAppleのサービスと設定により管理される場合があります。Apple、Google、RevenueCatが管理する記録は、各事業者の適用される方針と請求手続に従って扱われます。</p>
+<p class="muted">Provider information: <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google Mobile Ads data disclosure</a> · <a href="https://policies.google.com/privacy">Google Privacy Policy</a> · <a href="https://www.revenuecat.com/privacy/">RevenueCat Privacy Policy</a> · <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></p>
 </section>
 
 <section id="tasuki" class="card highlight">
