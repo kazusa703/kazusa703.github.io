@@ -305,9 +305,9 @@
 
 
 <section id="mitalog" class="card highlight">
-<h2>MitaLog — version 1.0 / <span lang="ja">MitaLog — バージョン1.0</span></h2>
-<p>This section applies specifically to MitaLog version 1.0 and controls if it conflicts with the common provisions on this page.</p>
-<p lang="ja">本節はMitaLogバージョン1.0に固有の内容であり、本ページの共通規定と矛盾する場合は本節が優先されます。</p>
+<h2>MitaLog — versions 1.0 and 2.0 / <span lang="ja">MitaLog — バージョン1.0・2.0</span></h2>
+<p>The following existing provisions apply to MitaLog version 1.0. The version 2.0 supplement below applies to version 2.0 and controls where its descriptions differ. This app-specific section takes precedence over conflicting common provisions.</p>
+<p lang="ja">以下の既存規定はMitaLogバージョン1.0に適用します。下記のバージョン2.0補足は2.0に適用し、説明が異なる場合は補足を優先します。本アプリ固有の節は、矛盾する共通規定より優先されます。</p>
 
 <h3>Personal library on the device / <span lang="ja">端末内の個人ライブラリ</span></h3>
 <p>MitaLog stores the user's personal library, status, notes, tags, and related records in the app's local container. These private library records are not made public merely by adding them to the library.</p>
@@ -336,6 +336,33 @@
 <p lang="ja">バージョン1.0には広告、アプリ内購入、サブスクリプション、アプリ横断トラッキングがありません。MitaLogは個人情報を販売しません。</p>
 
 <p class="muted">Provider information: <a href="https://firebase.google.com/support/privacy">Google Firebase privacy and security</a> · <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></p>
+<h3 id="mitalog-2">Version 2.0 supplement / <span lang="ja">バージョン2.0の補足</span></h3>
+<h3>Registered songs and representative five / 登録曲と代表5曲</h3>
+<p>In version 2.0, songs you explicitly register are stored with your anonymous account on the developer&#x27;s backend. Registration stores recording identifiers, song titles and artist metadata. The service uses all registered songs to find people matching the selected 2–5 songs and to suppress recommendations of songs already registered. Registering a song does not automatically publish it as one of your representative five.</p>
+<p lang="ja">バージョン2.0では、明示的に登録した曲の録音ID・曲名・アーティスト情報を、 匿名アカウントに関連付けて開発者のバックエンドへ保存します。登録曲全体は、 選択した2〜5曲がすべて一致する人の検索と、登録済みの曲のおすすめを重複して 届けないために使います。登録しただけで代表5曲として公開されることはありません。</p>
+<p>You separately choose exactly five registered songs to publish. Other users see these five titles and artists in discovery results and your public profile. Other registered songs are not displayed as a list, but a search match can reveal that you registered the search songs. You can change or withdraw your representative five. Withdrawal removes the profile from public discovery; it does not delete registered songs or recall a recommendation already delivered.</p>
+<p lang="ja">登録曲から別途5曲を選んで公開できます。他の利用者には、検索結果と公開プロフィールで この5曲の曲名とアーティストを表示します。それ以外の登録曲を一覧表示することは ありませんが、検索で一致したことから検索対象の曲を登録していると推測される 可能性があります。代表5曲は変更・非公開化できます。非公開化すると人探しの対象から 外れますが、登録曲の削除や、すでに届いたおすすめの取り消しにはなりません。</p>
+<h3>Recommendations and local data / おすすめと端末内データ</h3>
+<p>Recommendations process the sender&#x27;s and recipient&#x27;s account identifiers and a song reference. The service records an acceptance receipt and suppresses duplicates. The sender receives the same acceptance response even when delivery is suppressed; the response does not disclose whether the recipient already registered the song. Local bookmarks, read/listened state, and request history are saved on the device. History confirms accepted requests on that device and account, not delivery or listening.</p>
+<p lang="ja">おすすめでは送信者・受信者のアカウント識別子と曲の参照情報を処理し、受付記録を 保存して重複を抑止します。配達を抑止した場合も送信者には同じ受付結果を返し、 受信者がその曲を登録済みかどうかを受付結果で知らせることはありません。 ブックマーク、既読・聴いた状態、送信履歴は端末内に保存します。送信履歴はその端末・ アカウントで受付を確認できた記録であり、到着や再生を保証しません。</p>
+<h3>Earlier data, deletion, and providers / 以前のデータ・削除・提供元</h3>
+<p>Earlier local songs and public shelves are not automatically copied into the registered list. You choose which songs to register and can separately withdraw the earlier shelf. In-app account deletion removes the anonymous authentication account and associated registered songs, representative profile, inbox, recommendation records and local account state. Device backups are controlled by Apple and the device&#x27;s settings.</p>
+<p lang="ja">以前の端末内保存曲と公開棚は、登録リストへ自動で移しません。追加する曲を選んで 登録し、以前の公開棚は別途非公開にできます。アプリ内のアカウント削除は、匿名認証 アカウントと、関連する登録曲・代表5曲・受信箱・おすすめの記録・端末内のアカウント 情報を削除します。端末バックアップはAppleと端末の設定で管理されます。</p>
+<p>Firebase Authentication, App Check and the developer&#x27;s Google Cloud backend operate and protect these features. Version 2.0 enables no advertising, purchases, subscriptions or cross-app tracking. The app shares recording references, not audio/video files.</p>
+<p lang="ja">Firebase Authentication、App Check、開発者のGoogle Cloudバックエンドを、機能の提供と 保護に使用します。バージョン2.0では広告・購入・サブスクリプション・アプリ横断 トラッキングを有効にしません。共有するのは録音の参照情報であり、音声・動画ファイル ではありません。</p>
+<p>Firebase SDKs also send technical information such as device type, operating-system and SDK versions, app bundle identifier, and App Check attestation/assertion objects. This supports SDK diagnostics and protection against unauthorized access. Firebase&#x27;s SDK user-agent information is not linked to a user or device identifier.</p>
+<p lang="ja">Firebase SDKは、端末の種類、OS・SDKのバージョン、アプリ識別子、App Checkの証明・検証情報などの技術情報も送信します。SDKの診断と不正アクセスの防止に使用します。Firebase SDKのユーザーエージェント情報は、利用者や端末の識別子に関連付けません。</p>
+<p>The Google Cloud service also keeps operational access logs containing IP addresses, request URLs and methods, user-agent information, response status and timing. The current default logging bucket retains these logs for 30 days for operation and security. Deleting an account removes its application data, but does not immediately erase these separately retained operational logs.</p>
+<p lang="ja">Google Cloudサービスは、IPアドレス、リクエストのURL・方式、ユーザーエージェント情報、応答結果・時間を含む運用アクセスログも記録します。現在の既定ログ保存先では、運用とセキュリティのため30日間保存します。アカウント削除でアプリの関連データは削除しますが、別途保存する運用ログは直ちには削除しません。</p>
+<p>Firebase Authentication also uses IP addresses and user-agent information to authenticate accounts and prevent abuse. Firebase documents that logged IP addresses are kept for a few weeks, and that other authentication information is removed from live and backup systems within 180 days after account deletion is initiated. App Check does not retain attestation material; validation by Apple remains subject to Apple’s terms. This backend verifies App Check tokens without enabling replay protection.</p>
+<p lang="ja">Firebase Authenticationも、認証と不正利用の防止のためIPアドレスとユーザーエージェント情報を使用します。Firebaseの説明では、記録したIPアドレスは数週間保持し、その他の認証情報はアカウント削除の開始後180日以内に稼働・バックアップシステムから削除します。App Checkは証明情報を保持せず、Appleによる検証にはAppleの規約が適用されます。本バックエンドはApp Checkのリプレイ保護を有効にせずトークンを検証します。</p>
+<h3>Song search / <span lang="ja">楽曲検索</span></h3>
+<p>Version 2.0 sends your song-title or artist search text through our backend to MusicBrainz. MusicBrainz receives the search parameters, our server's IP address and a shared app identifier. We do not forward your account identifier, device IP address or registered-song list. MetaBrainz records API requests and parameters under its <a href="https://metabrainz.org/privacy">privacy policy</a> and publishes aggregate traffic statistics.</p>
+<p lang="ja">バージョン2.0では、曲名・アーティストの検索文字列をバックエンド経由でMusicBrainzへ送信します。MusicBrainzには検索条件、当社サーバーのIPアドレス、アプリ共通の識別情報が渡ります。アカウント識別子、端末のIPアドレス、登録曲一覧は転送しません。MetaBrainzは同社の<a href="https://metabrainz.org/privacy">プライバシーポリシー</a>に基づきAPIのリクエスト・検索条件を記録し、通信量の集計統計を公開しています。</p>
+<p>Our backend keeps a small shared search cache containing a hash of the search and recording metadata, without an account identifier. Cached results are reused for up to 24 hours; cache entries remain until overwritten. Recording identifiers and metadata are retained for registration and matching. Account deletion does not erase this shared public catalog or provider logs.</p>
+<p lang="ja">バックエンドには、アカウント識別子を含まない、検索条件のハッシュ値と録音情報の小規模な共通キャッシュを保存します。検索結果を再利用する期間は24時間以内で、キャッシュ自体は上書きされるまで残ります。録音IDとメタデータは登録・照合のため保持します。アカウント削除で、この共通の公開カタログや提供元のログは削除しません。</p>
+<p>Search coverage and naming vary by catalog. Earlier recording references are preserved and are not automatically equated with MusicBrainz recordings. No music-service subscription or personal listening library is accessed.</p>
+<p lang="ja">検索できる曲と表記はカタログによって異なります。以前の曲の参照情報は保持しますが、MusicBrainzの録音と自動で同一視しません。音楽配信サービスの契約情報や個人の再生ライブラリにはアクセスしません。</p>
 </section>
 
 <section id="kaku" class="card highlight">
