@@ -34,6 +34,8 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: .
+          # .well-known/apple-app-site-association (Kaku Universal Links) is a hidden path.
+          include-hidden-files: true
 
       - name: Deploy to GitHub Pages
         id: deployment
