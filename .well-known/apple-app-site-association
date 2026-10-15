@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["WM7939G226.com.imai.bunshoclip"],
+        "components": [
+          { "/": "/apps/kaku/m/*", "comment": "Kaku machine deep link" }
+        ]
+      }
+    ]
+  }
+}
