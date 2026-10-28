@@ -49,7 +49,7 @@
 <p>受信箱の曲参照は指定した相手に届けます。非公開の月間ベスト下書き・予約内容、通報理由、認証トークンは、公開プロフィールに載せる情報ではありません。運営者と業務上必要な委託先は、運用・安全対応等の必要な範囲で処理します。</p>
 <div class="table-wrap" tabindex="0" role="region" aria-label="Data details / データの詳細"><table><thead><tr><th scope="col">送信先・サービス</th><th scope="col">送信/処理される情報</th><th scope="col">MitaLogの目的／送信先の目的</th></tr></thead><tbody>
 <tr><td>GoogleのFirebase Authentication / App Check、Appleの検証サービス</td><td>アカウントID、IP・user-agent等、アプリ/端末の検証情報</td><td>認証・不正対策／認証、整合性検証、セキュリティ。Appleには設定に応じたApp Check検証情報が渡ります</td></tr>
-<tr><td>Google Cloud / Cloud Run / Firestore等</td><td>登録曲、公開/未公開状態、social/送受信/通報/block/削除処理情報、通信・運用記録</td><td>アプリのサーバー機能／データ保管・計算・通信・安全運用</td></tr>
+<tr><td>Google Cloud / Cloud Run / Firestore等</td><td>登録曲、公開/未公開状態、フォロー・配信、送受信、通報・ブロック、削除処理の情報、通信・運用記録</td><td>アプリのサーバー機能／データ保管・計算・通信・安全運用</td></tr>
 <tr><td>Firebase Remote Config</td><td>インストール識別子、設定取得に伴う技術情報</td><td>広告機能等の設定配布／設定の取得・配布。音楽の嗜好を広告向けに送る機能ではありません</td></tr>
 <tr><td>Google（AdMob / UMP）および同意画面に表示される広告技術提供者</td><td>IP由来の概算位置、端末/アプリ識別子、広告表示/操作、製品操作、性能/crash等の診断情報、プライバシーの選択</td><td>広告表示・選択管理／配信、頻度調整、測定、分析、不正防止、サービス改善等。処理は地域・設定・選択・SDKにより異なります</td></tr>
 <tr><td>Apple（iTunes検索・外部音楽リンク）</td><td>検索語、国/地域、IP等。外部リンクを開くとリンク先に必要な通信情報</td><td>検索/利用者が選んだリンク／検索結果やリンク先サービスの提供</td></tr>
@@ -72,7 +72,7 @@
 <tr><td>アカウント・登録曲・social・送受信</td><td>アカウントの利用中に保持します。アカウント削除は関連する登録曲・公開プロフィール・分類・月間ベスト・フォロー・配信・送受信・ブロック・通報等の削除処理を行います。相手側の該当受信記録も対象です。完了までの一律の日数は定めていません</td></tr>
 <tr><td>削除要求と進捗</td><td>削除と認証アカウント削除が完了すると削除要求を消します。失敗・中断時は再試行のため識別子・要求日時・進捗を保持します。自動消去期限は設定されていません。エラー時はお問い合わせください</td></tr>
 <tr><td>更新イベント・配信・重複防止・操作記録</td><td>必要な機能処理と整合性のため保存し、アカウントに関連するものは上記削除対象です。表示・配信の期限を過ぎても物理的に消去されるとは限りません。全記録の一律の自動消去期限は設定されていません</td></tr>
-<tr><td>処理再開位置・運用集計</td><td>ワーカーの最終処理位置に識別子や時刻が残る場合があります。走査の進行・完了で更新されますが、アカウント削除と同時の消去や自動消去期限はありません。個人の曲リストとは別の運用・利用量集計もアカウント削除の対象外です</td></tr>
+<tr><td>配信処理の進行記録・運用集計</td><td>更新配信の処理の進行を記録する箇所に、識別子や時刻が残る場合があります。走査の進行・完了で更新されますが、アカウント削除と同時の消去や自動消去期限はありません。個人の曲リストとは別の運用・利用量集計もアカウント削除の対象外です</td></tr>
 <tr><td>運用・セキュリティログ</td><td>障害・安全対応のため別途保存され、アカウント削除で直ちに消去しません。保存期間と消去は、Google Cloudの各保存先の設定および運用上・法令上の必要性に従います。保存の取扱いは窓口へお問い合わせください</td></tr>
 <tr><td>Firebase Authentication</td><td>Googleの説明では、記録したIPアドレスは数週間、その他の認証情報は開発者がユーザー削除を開始してから180日以内に稼働・バックアップシステムから除去されます。これは登録曲の保存期間ではありません</td></tr>
 <tr><td>Remote Config等のインストール情報・広告・同意</td><td>各サービスの保存・削除手続に従います。アプリのアカウント削除はFirebase Installationsの削除を同時に行うものではなく、全SDK情報が一括で消去されるわけではありません。運営者が管理する処理の請求は当窓口で受け付けます</td></tr>
@@ -161,7 +161,7 @@
 <tr><td>Account, registered songs, social and messaging</td><td>Kept during account use. Account deletion processes related registrations, public profile, categories, monthly selections, follows, delivery, sent/received items, blocks and reports, including corresponding inbox items held for recipients. There is no uniform completion deadline</td></tr>
 <tr><td>Deletion request and progress</td><td>Removed after application-data and authentication-account deletion succeed. On interruption or failure, identifiers, request time and progress remain for retry. No automatic erasure deadline is configured. Contact us if an error occurs</td></tr>
 <tr><td>Updates, delivery, duplicate prevention and operation records</td><td>Kept for functionality and consistency; account-related records are covered by the deletion above. Display or delivery expiry does not necessarily physically erase a record. There is no uniform automatic erasure deadline for all records</td></tr>
-<tr><td>Worker position and operational aggregates</td><td>Identifiers or times may remain in the last processed position. Scanning updates or clears positions, but account deletion does not erase them simultaneously and there is no automatic erasure deadline. Separate operational/usage aggregates are also outside account deletion; these differ from a personal song list</td></tr>
+<tr><td>Delivery-processing progress records and operational aggregates</td><td>Identifiers or times may remain in records that track update-delivery processing. Scanning updates or clears positions, but account deletion does not erase them simultaneously and there is no automatic erasure deadline. Separate operational/usage aggregates are also outside account deletion; these differ from a personal song list</td></tr>
 <tr><td>Operational/security logs</td><td>Separately retained for troubleshooting and security, not immediately erased by account deletion. Retention and erasure depend on each Google Cloud destination’s settings and operational or legal needs. Contact us for information about retention</td></tr>
 <tr><td>Firebase Authentication</td><td>Google states that logged IP addresses are kept for a few weeks and other authentication information is removed from live and backup systems within 180 days after developer-initiated user deletion. This is not the retention period for registered songs</td></tr>
 <tr><td>Installation information, ads and consent</td><td>Subject to each provider’s retention/deletion procedures. App account deletion does not also delete Firebase Installations or erase all SDK information together. Contact us for processing controlled by the Operator</td></tr>
